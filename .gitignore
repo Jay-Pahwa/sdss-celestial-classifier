@@ -1,0 +1,15 @@
+# Ignore the dataset file used in the code
+sdss_star_galaxy_qso.csv
+
+# Ignore any other CSV or Excel data files in this folder
+*.csv
+*.xlsx
+*.json
+
+# Ignore temporary Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environments if you created one inside this folder
+venv/
+.venv/
+env/

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Celestial 3D Space</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            background: rgba(0,0,0,0.7);
+            padding: 12px;
+        }
+
+        #legend {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            background: rgba(0,0,0,0.7);
+            padding: 12px;
+        }
+
+        #controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="info">Hover over a point</div>
+
+<div id="legend">
+<b>Legend</b><br>
+🟡 Star<br>
+🔵 Galaxy<br>
+🟣 Quasar<br>
+🔴 Wrong Prediction
+</div>
+
+<div id="controls">
+<select id="modelSelect">
+  <option value="rf_pred">Random Forest</option>
+  <option value="knn_pred">KNN</option>
+  <option value="svm_pred">SVM</option>
+</select>
+
+<select id="classSelect">
+    <option value="All">All Classes</option>
+    <option value="Star">Star</option>
+    <option value="Galaxy">Galaxy</option>
+    <option value="Quasar">Quasar</option>
+</select>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
